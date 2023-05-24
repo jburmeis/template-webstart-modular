@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  # Frontend service      
+  frontend:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    ports:
+      - "80:80"
+    # If the service should start after another service
+    # depends_on:
+    #  - backend-server
+
+  # Example how to add a backend service
+  # backend-server:
+  #   build:
+  #     context: .
+  #     dockerfile: ./backend/Dockerfile
+

@@ -1,0 +1,36 @@
+{
+    "project": [
+        {
+            "file": "README.md",
+            "keywords": [
+                "webstart-id",
+                "webstart-project",
+                "webstart-project-setupdate",
+                "webstart-template-url"
+            ]
+        },
+        {
+            "file": "frontend/README.md",
+            "keywords": [
+                "webstart-id",
+                "webstart-project",
+                "webstart-project-setupdate",
+                "webstart-template-url"
+            ]
+        },
+        {
+            "file": "frontend/package.json",
+            "keywords": [
+                "webstart-project-id",
+                "webstart-project-name",
+                "webstart-project-author"
+            ]
+        },
+        {
+            "file": "frontend/buildtools/webpack/config.js",
+            "keywords": [
+                "webstart-project-name"
+            ]
+        }
+    ]
+}

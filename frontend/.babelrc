@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-env",
+      {
+        "targets": "> 0.25%, not dead",
+        "modules": false,
+        "useBuiltIns": "usage",
+        "corejs": 3
+      }
+    ]
+  ],
+  "plugins": [
+    "@emotion",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties"
+  ],
+  "ignore": [
+    "**/tests"
+  ]
+}
