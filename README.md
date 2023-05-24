@@ -21,11 +21,11 @@ The template is set up initially as a frontend-only web application. This is how
 A common use case is to extend the frontend with application with backend microservices, each in their own sub-project. This is how you extend the repository:
 1. Add a new project directory. Each sub-project should have a Dockerfile at the root, so that all projects can be build from the root (see section on deployment below). The Node.js (TypeScript) or Fast API (Python) templates are potential options.
 2. Integrate the project into the build process:
-⋅⋅1. **Docker-compose**: Extend the `docker-compose.yml` at the root as described there.
-..2. **GitLab CI**: Extend the `gilab-ci.yml` at the root as described there.
+   - **Docker-compose**: Extend the `docker-compose.yml` at the root as described there.
+   - **GitLab CI**: Extend the `gilab-ci.yml` at the root as described there.
 3. Forward API requests to the backend service in the frontend web servers:
-..1 **Development**: Edit the `frontend/buildtools/webpack/config.dev.js` configuration as described there.
-..2 **Production**: Edit the `frontend/buildtools/nginx/nginx.conf` configuration as described there.
+   - **Development**: Edit the `frontend/buildtools/webpack/config.dev.js` configuration as described there.
+   - **Production**: Edit the `frontend/buildtools/nginx/nginx.conf` configuration as described there.
 
 # Development
 See the README docs in the individual projects how each project can be started for development.
