@@ -3,8 +3,8 @@
         {
             "file": "README.md",
             "keywords": [
-                "webstart-id",
-                "webstart-project",
+                "webstart-project-id",
+                "webstart-project-name",
                 "webstart-project-setupdate",
                 "webstart-template-url"
             ]
@@ -12,8 +12,8 @@
         {
             "file": "frontend/README.md",
             "keywords": [
-                "webstart-id",
-                "webstart-project",
+                "webstart-project-id",
+                "webstart-project-name",
                 "webstart-project-setupdate",
                 "webstart-template-url"
             ]
