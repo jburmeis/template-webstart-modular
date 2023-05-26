@@ -16,7 +16,7 @@ const initialState: ApplicationState = {
 export const applicationSlice = createSlice({
   name: "application",
   initialState,
-  
+
   // Reducer for implicitly defined actions that are bound to this slice
   reducers: {
     // Example: Action without parameter
@@ -44,9 +44,6 @@ export const applicationSlice = createSlice({
   },
 });
 
-export const { 
-  addElement, 
-  addMultipleElements 
-} = applicationSlice.actions;
+export const { addElement, addMultipleElements } = applicationSlice.actions;
 
 export default applicationSlice.reducer;

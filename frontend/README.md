@@ -38,7 +38,7 @@ docker build -t webstart-project-id .
 docker run -p 80:80 -d webstart-project-id
 ```
 
-### Common issues
+### Common Issues
 When building locally on your system, the docker build system copies the `package-lock.json` from your project root and runs `npm ci` by referencing this file. 
 - If you have set your system to use another registry, place an `.npmrc` credentials file in the root folder, or inject it in the CI pipeline. Note that the dockerfile is set up in a way, that this will *not* be included in the final image.
 - If you cannot provide a `package-lock.json` file in your build workflow, replace `npm ci` with `npm install` in the dockerfile. Note that you loose the certainty of reproducable builds this way.

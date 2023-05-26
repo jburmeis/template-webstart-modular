@@ -1,8 +1,7 @@
 {
     "env": {
         "browser": true,
-        "es2022": true,
-        "node": true
+        "es2022": true
     },
     "extends": [
         "eslint:recommended",
@@ -30,6 +29,7 @@
         }
     },
     "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-inferrable-types": "off"
     }
 }
