@@ -1,4 +1,4 @@
 export enum AppRoutes {
-  Root = "/",
-  Page2 = "/page2",
+	Root = "/",
+	Page2 = "/page2",
 }

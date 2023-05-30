@@ -8,7 +8,7 @@ import { addElement } from "./slices/application";
  * This can be useful for application-wide updates, e.g. to initialize all slices at application startup.
  */
 export const globalActions = {
-  applicationReset: createAction<{ numElements: number }>("global/reset"),
+	applicationReset: createAction<{ numElements: number }>("global/reset"),
 };
 
 /**
@@ -17,10 +17,10 @@ export const globalActions = {
  * getStore() can be used to access the current store state
  */
 export const addRandomElements = () => {
-  return (dispatch: Dispatch, getStore: () => RootState) => {
-    const numElements = 1 + Math.floor(Math.random() * 3);
-    for (let i = 0; i < numElements; i++) {
-      dispatch(addElement());
-    }
-  };
+	return (dispatch: Dispatch, getStore: () => RootState) => {
+		const numElements = 1 + Math.floor(Math.random() * 3);
+		for (let i = 0; i < numElements; i++) {
+			dispatch(addElement());
+		}
+	};
 };
